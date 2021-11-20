@@ -1,0 +1,711 @@
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+	overflow: hidden;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	height: calc(100vh);
+	width: 100%;
+	filter: brightness(50%);
+	background: url("./ant-rozetsky-HXOllTSwrpM-unsplash.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -5;
+}
+.App-link {
+	color: #61dafb;
+}
+
+.filter-nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	min-width: fit-content;
+}
+
+.title {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.homeForm {
+	gap: 10px;
+}
+.home-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	width: 100%;
+	height: calc(100vh - 60px);
+}
+
+.header-div {
+	width: 50% !important;
+	padding: 0;
+	margin: 0;
+}
+
+.log-div {
+	width: 50% !important;
+	padding: 0;
+	margin: 0;
+}
+.categories-list {
+	justify-content: start;
+	display: flex;
+	overflow-x: scroll;
+}
+
+.fullWidth {
+	min-width: max-content;
+}
+
+.noResponsive {
+	flex-direction: row !important;
+}
+
+.categoriesContainer {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	width: 100%;
+}
+.categories-list-nav {
+	justify-content: start;
+	display: flex;
+	flex-wrap: wrap;
+}
+.offer-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	margin: 0;
+}
+
+#offer-wrapper {
+	margin-top: 220px !important;
+}
+.modalBody {
+	display: flex;
+	flex-direction: column;
+}
+.card {
+	width: 17.7%;
+}
+
+.card-img {
+	width: 100%;
+	height: 15vw;
+	object-fit: cover;
+}
+
+.offerNavbar {
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	z-index: 5;
+	top: 0;
+}
+
+.filterNavbar {
+	display: flex;
+	width: 100%;
+	margin-left: 2rem !important;
+	margin-right: 2rem !important;
+	justify-content: space-between !important;
+	align-items: center;
+}
+.descriptionLink {
+	margin: 0rem 1rem !important;
+}
+
+.left {
+	margin-left: 3rem !important;
+}
+
+.offerHeader {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 180px;
+	scroll-margin-top: 200px !important;
+}
+
+.sellerDetails {
+	display: flex;
+	align-items: center;
+}
+.sellerImg {
+	width: 50px !important;
+	height: 50px !important;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.sellerData {
+	display: flex;
+	width: 100%;
+}
+.sellerTitle {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.sellerTitle p {
+	margin: 0;
+}
+.sellerOpinions {
+	display: flex;
+	color: darkorange;
+	justify-content: center;
+	align-items: center;
+}
+
+.offerPriceBody {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.offerPriceTab {
+	color: #495057;
+	background-color: #fff;
+	border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.empImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.sellerDescriptionHeader {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 !important;
+}
+
+.sellerDescriptionRating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.offerRecommended {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	scroll-margin-top: 200px !important;
+}
+
+.carousel-item .m-3 {
+	margin: 0 !important;
+}
+
+.offerDetail {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem !important;
+	align-items: baseline;
+}
+
+.offerPriceMenu {
+	width: 40%;
+	position: fixed;
+	margin-top: 180px !important;
+	right: 6%;
+}
+
+.offerSellerDescription {
+	width: 50%;
+	scroll-margin-top: 200px !important;
+}
+
+.offerDescription {
+	width: 50%;
+	scroll-margin-top: 200px !important;
+}
+
+.offerSellerDescriptionCard {
+	width: 100% !important;
+}
+
+.offerCarousel {
+	width: 50%;
+	scroll-margin-top: 200px !important;
+}
+
+.dropdownPad {
+	padding: 1.65rem 3rem !important;
+}
+
+.bottomNavbar {
+	width: 100%;
+}
+
+#home {
+	display: none !important;
+}
+
+.scrollButton {
+	z-index: 6;
+	font-size: 30px;
+	font-weight: bold;
+	opacity: 0.7;
+	cursor: pointer;
+	display: none;
+}
+
+.offerCarouselSlide {
+	width: 100%;
+	display: block ruby;
+}
+
+.offerCarouselSlide .carousel-inner {
+	width: 70% !important;
+	margin-top: 1.5rem !important;
+}
+
+.offerCarouselSlide .carousel-control-prev {
+	filter: brightness(0%);
+}
+
+.offerCarouselSlide .carousel-control-next {
+	filter: brightness(0%);
+}
+
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+	.card {
+		width: 30%;
+	}
+
+	.card-img {
+		height: 20vw;
+	}
+
+	.log-div {
+		width: 50% !important;
+	}
+
+	.dropdownPad {
+		padding: 0.84rem 3rem !important;
+	}
+
+	.home {
+		display: none !important;
+	}
+
+	.scrollButton {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 660px) and (max-width: 990px) {
+	.card {
+		width: 45%;
+	}
+
+	.card-img {
+		height: 30vw;
+	}
+
+	.filter-nav {
+		justify-content: flex-end;
+	}
+
+	.homeInput {
+		width: 100% !important;
+	}
+
+	.homeBtn {
+		width: 100% !important;
+	}
+	.header-div {
+		width: 100% !important;
+	}
+
+	.log-div {
+		width: 75% !important;
+	}
+	.card {
+		width: 100%;
+	}
+
+	.card-img {
+		height: 50vw;
+	}
+
+	.header-div {
+		width: 100% !important;
+	}
+	.modal {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.homeForm {
+		flex-direction: column;
+	}
+
+	.log-div {
+		width: 100% !important;
+	}
+
+	.offerHeader {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sellerDetails {
+		display: flex;
+		align-items: center;
+	}
+	.sellerImg {
+		width: 50px !important;
+		height: 50px !important;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	.sellerData {
+		display: flex;
+		width: 100%;
+	}
+	.sellerTitle {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sellerTitle p {
+		margin: 0;
+	}
+	.sellerOpinions {
+		display: flex;
+		color: darkorange;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.offerPriceBody {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.offerPriceTab {
+		color: #495057;
+		background-color: #fff;
+		border-color: #dee2e6 #dee2e6 #fff;
+	}
+
+	.empImg {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+
+	.sellerDescriptionHeader {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 !important;
+	}
+
+	.sellerDescriptionRating {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.offerRecommended {
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+	}
+
+	.carousel-item .m-3 {
+		margin: 0 !important;
+	}
+
+	.offerDetail {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.offerHeader {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.offerPriceMenu {
+		width: 100%;
+		position: relative;
+		right: 0;
+		margin-top: 2rem !important;
+	}
+
+	.offerSellerDescription {
+		width: 100%;
+	}
+
+	.offerDescription {
+		width: 100%;
+	}
+
+	.offerSellerDescriptionCard {
+		width: 100% !important;
+	}
+
+	.offerCarousel {
+		width: 100%;
+	}
+
+	.descriptionNavbar {
+		display: none !important;
+	}
+
+	#home {
+		display: flex !important;
+	}
+
+	#navbarForm {
+		display: none !important;
+	}
+
+	.scrollButton {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.card {
+		width: 100%;
+	}
+
+	.card-img {
+		height: 50vw;
+	}
+	.filter-nav {
+		justify-content: flex-end;
+	}
+
+	.header-div {
+		width: 100% !important;
+	}
+	.modal {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.homeForm {
+		flex-direction: column;
+	}
+
+	.log-div {
+		width: 100% !important;
+	}
+
+	.offerHeader {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sellerDetails {
+		display: flex;
+		align-items: center;
+	}
+	.sellerImg {
+		width: 50px !important;
+		height: 50px !important;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	.sellerData {
+		display: flex;
+		width: 100%;
+	}
+	.sellerTitle {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sellerTitle p {
+		margin: 0;
+	}
+	.sellerOpinions {
+		display: flex;
+		color: darkorange;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.offerPriceBody {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.offerPriceTab {
+		color: #495057;
+		background-color: #fff;
+		border-color: #dee2e6 #dee2e6 #fff;
+	}
+
+	.empImg {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+
+	.sellerDescriptionHeader {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 !important;
+	}
+
+	.sellerDescriptionRating {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.offerRecommended {
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+	}
+
+	.carousel-item .m-3 {
+		margin: 0 !important;
+	}
+
+	.offerDetail {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1.5rem !important;
+	}
+
+	.offerHeader {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.offerPriceMenu {
+		width: 100%;
+		position: relative;
+		right: 0;
+		margin-top: 2rem !important;
+	}
+
+	.offerSellerDescription {
+		width: 100%;
+	}
+
+	.offerDescription {
+		width: 100%;
+	}
+
+	.offerSellerDescriptionCard {
+		width: 100% !important;
+	}
+
+	.offerCarousel {
+		width: 100%;
+	}
+
+	.dropdownPad {
+		padding: 1.5rem !important;
+	}
+
+	.left {
+		margin-left: 1.6rem !important;
+	}
+
+	.descriptionNavbar {
+		display: none !important;
+	}
+
+	#home {
+		display: flex !important;
+	}
+
+	#navbarForm {
+		display: none !important;
+	}
+
+	.scrollButton {
+		display: none !important;
+	}
+}
+
+.loginBg {
+	background-color: #f8f9fc;
+	padding: 15px;
+	border-radius: 5px;
+}

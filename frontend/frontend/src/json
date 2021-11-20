@@ -1,0 +1,19 @@
+  [
+    '{{repeat(15, 20)}}',
+    {
+      id: '{{index()}}',
+     title: '{{lorem(1, "sentences")}}',
+      category: '{{random("graphic design", "web development", "social media")}}',
+      reviews: '{{integer(0, 250)}}',
+      score: '{{floating(0, 5, 1)}}',
+      price: '{{floating(0, 1000, 2)}}',
+      img: 'https://source.unsplash.com/featured/?design/600x300/sig={{integer(0, 15000)}}',
+      seller: {
+        name: '{{lorem(1, "words")}}',
+        rank: '{{random("top", "nuevo", "verificado", "popular")}}',
+        img: 'https://source.unsplash.com/featured/?person/30x30/sig={{integer(0, 15000)}}',
+      }
+        
+     
+    }
+  ]
